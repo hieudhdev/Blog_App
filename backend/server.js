@@ -207,8 +207,6 @@ app.delete('/post/delete/:id', async (req, res) => {
     const postDoc = await PostDB.findOneAndDelete({
         _id: id,
     })
-
-    // console.log(postDoc);
     res.json(postDoc);
 })
 
